@@ -1,0 +1,47 @@
+{% load static %}
+<link rel="stylesheet" href="{%  static 'home/style.css' %}"/>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.11.2/jquery-ui.min.js"></script>
+
+<div class="intro">
+  <div class="black"></div>
+  <div class="white"></div>
+    <div class="smaller_circle"></div>
+    <div class="small_circle"></div>
+  <div class="boxfather">
+    <div class="box">
+      <h1>WELCOME</h1>
+      <button>Enter</button>
+    </div>
+  </div>
+
+
+</div>
+
+
+
+<div class="homepage">
+  <h1>The Great White</h1>
+  <p>Messenger bag kickstarter chia swag craft beer irony art party pinterest cardigan, skateboard ethical. Pitchfork tilde seitan, crucifix asymmetrical flexitarian church-key mustache shoreditch occupy polaroid next level microdosing kickstarter. Kitsch lumbersexual tacos small batch, VHS hoodie taxidermy four loko keytar craft beer listicle narwhal four dollar toast authentic. Tofu pour-over truffaut tumblr before they sold out. Kale chips polaroid beard, ugh williamsburg fixie gluten-free quinoa fap bitters flexitarian. Meh master cleanse plaid 90's hammock, schlitz brunch quinoa kombucha intelligentsia aesthetic blog. Wolf austin readymade, literally freegan bitters pour-over cliche hella migas chambray tacos PBR&B. <br /> <br />
+
+Ramps wolf cronut retro. Farm-to-table actually slow-carb 3 wolf moon blog godard, taxidermy knausgaard asymmetrical gastropub narwhal quinoa. Deep v raw denim tousled flexitarian, celiac letterpress hammock beard put a bird on it lo-fi marfa. Poutine microdosing cold-pressed keytar retro, intelligentsia portland DIY craft beer pug seitan. Mumblecore readymade listicle fap, retro waistcoat meggings church-key craft beer chambray narwhal VHS. Messenger bag direct trade venmo hoodie blue bottle. Craft beer drinking vinegar meditation heirloom pork belly.  <br /> <br />
+   Cronut scenester fixie helvetica, deep v beard pabst godard. Meditation beard swag yr, hella cardigan flexitarian master cleanse irony bitters godard banjo. Organic banh mi chartreuse, kombucha shoreditch iPhone fanny pack. Irony seitan direct trade authentic four loko butcher poutine gluten-free, tumblr polaroid bespoke DIY. Before they sold out drinking vinegar hoodie, helvetica humblebrag tumblr lumbersexual yuccie keytar yr sriracha VHS synth retro. Narwhal sustainable marfa tilde godard. Retro shabby chic etsy austin skateboard.</p>
+
+</div>
+
+<script type="text/javascript">
+$(function(){
+
+  $('.homepage').hide();
+  $('.box').delay(500).effect("bounce", { times: 8 }, 800);
+  $('.box').hide().slideDown(500);
+
+
+  $('button').click(function(){
+    $('.intro').slideUp(400);
+     $('.box').slideUp(200);
+    $('.homepage').delay(500).slideDown(300);
+  });
+
+});
+</script>

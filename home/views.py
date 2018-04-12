@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. I have successfully set up my own server!")
+    return render(request, 'home/index.html')
